@@ -1,0 +1,53 @@
+.message {
+    display: flex;
+    width:350px;
+    height: 100px;
+    background-color: greenyellow;
+}
+
+.message img {
+    align-self: end;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    margin: 0 0 10px 10px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: green;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 7px 7px 7px 0;
+    position: relative;
+}
+
+.box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: radial-gradient(40px at top left, transparent 50%, green 51%) no-repeat right bottom;
+}
+
+.messagebox {
+    margin: 10px;
+}
+
+.name {
+    color: darkmagenta;
+}
+
+.mess {
+    color: white;
+}
+
+.time {
+    margin: 10px;
+}
