@@ -1,7 +1,42 @@
 .someClass {
-
+    display: flex;
+    align-items: start;
 }
 
 .error {
-    border: 1px solid red;
+    color: red;
+    margin-left: 10px;
+    height: 21px;
 }
+
+input {
+    margin: 10px;
+}
+
+.errorInput {
+    margin: 10px;
+    outline: none;
+    border: 2px solid red;
+}
+
+.button {
+    margin: 10px;
+    width: 50px;
+    outline: none;
+}
+
+button:focus {
+    outline: 2px solid greenyellow;
+}
+
+button:active {
+    background: greenyellow;
+}
+
+.count {
+    margin: 10px;
+}
+
+
+
+
