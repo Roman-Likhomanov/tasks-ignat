@@ -1,5 +1,19 @@
-.default {
 
+
+.default {
+margin:5px
+}
+
+.default:disabled {
+
+}
+
+.default:hover {
+    background-color: deepskyblue;
+}
+
+.default:focus {
+    background-color:yellow;
 }
 
 .red {

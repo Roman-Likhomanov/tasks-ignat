@@ -46,6 +46,7 @@ function HW4() {
                 <SuperButton
                     red // пропсу с булевым значением не обязательно указывать true
                     onClick={showAlert}
+                    className={s.blue}
                 >
                     delete {/*// название кнопки попадёт в children*/}
                 </SuperButton>

@@ -18,7 +18,7 @@ function HW3() {
     }
 
     let totalU = users.length
-console.log(users)
+
     return (
         <div>
             <hr/>
