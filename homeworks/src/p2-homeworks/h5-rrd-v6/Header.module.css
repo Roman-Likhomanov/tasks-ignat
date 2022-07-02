@@ -1,0 +1,26 @@
+.root {
+    display:flex;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    background-color: greenyellow;
+    align-self:center;
+}
+
+.nav {
+    padding: 5px;
+}
+
+.link {
+    color: blueviolet;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.active {
+    color:orangered;
+    text-decoration: none;
+}
+
