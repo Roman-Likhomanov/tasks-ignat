@@ -1,0 +1,16 @@
+.peopleBox {
+    display: flex;
+}
+
+.people {
+    width: 80px;
+    height: 30px;
+    border: solid 1px;
+    text-align: center;
+    line-height: 30px;
+    background-color: greenyellow;
+}
+
+.buttonBox {
+    display:flex
+}
