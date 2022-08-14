@@ -4,8 +4,17 @@ import SuperDoubleRange from './common/c8-SuperDoubleRange/SuperDoubleRange'
 import s from './HW11.module.css'
 
 function HW11() {
-    //let [value1, setValue1] = useState(0)
-    let [value2, setValue2] = useState([0, 100])
+    const [value1, setValue1] = useState(0)
+    const [value2, setValue2] = useState(100)
+
+    const rangeValueHandler = (value: number) => {
+        setValue1(value)
+    }
+
+    const doubleRangeValueHandler = (value: number[]) => {
+        setValue1(value[0])
+        setValue2(value[1])
+    }
 
     return (
         <div>
@@ -14,22 +23,22 @@ function HW11() {
 
             {/*should work (должно работать)*/}
             <div>
-                <span>{value2}</span>
+                <span>{value1}</span>
                 <SuperRange
-                    onChangeRange={setValue2}
-                    value={value2}
+                    onChangeRange={rangeValueHandler}
+                    value={value1}
                     // сделать так чтоб value1 изменялось
                 />
             </div>
 
             <div className={s.box}>
-                <span>{value2}</span>
+                <span>{value1}</span>
                 <SuperDoubleRange
-                    onChangeRange={setValue2}
-                    value={value2}
+                    onChangeRange={doubleRangeValueHandler}
+                    value={[value1, value2]}
                     // сделать так чтоб value1 и value2 изменялось
                 />
-                <span>{value2[1]}</span>
+                <span>{value2}</span>
             </div>
 
             <hr/>

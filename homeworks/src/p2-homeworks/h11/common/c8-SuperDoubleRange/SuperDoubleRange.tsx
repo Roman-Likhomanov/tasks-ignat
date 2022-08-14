@@ -31,9 +31,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
             label: 'Stop',
         },
     ];
-    // const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-    //     onChangeRange && onChangeRange(1)
-    // }
+
 
     return (
         <>
