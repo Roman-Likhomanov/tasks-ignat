@@ -3,7 +3,7 @@ import s from "./HW12.module.css";
 import {useDispatch, useSelector} from 'react-redux';
 import {AppStoreType} from '../h10/bll/store';
 import SuperSelect from '../h7/common/c5-SuperSelect/SuperSelect';
-import {themeAC} from '../h10/bll/themeReducer';
+import {themeAC} from './bll/themeReducer';
 
 const themes = ['dark', 'red', 'blue', 'orange', 'some'];
 
